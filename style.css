@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ab {
+  border: solid;
+  border-color: #86bb4d;
+  border-width: 5px;
+}
+
+.abertura {
+  height: 95px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 30px;
+  color: #ce3530;
+  padding-top: 100px;
+}
+
+.abertura_h2 {
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+  color: #ce3530;
+  padding-top: 20px;
+}
+
+.abertura_p {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 60px;
+  margin: white;
+  text-align: justify;
+  font-size: 22px;
+  font-weight: 750;
+  color: #ce3530;
+}
+
+.formulario {
+  border: solid;
+  border-top: none;
+  border-color: #86bb4d;
+  border-width: 5px;
+}
+
+.formulario h2 {
+  text-align: center;
+  font-style: normal;
+  color: #ce3530;
+  font-weight: 750;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dados_pessoais {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 25px;
+}

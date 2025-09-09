@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcação de Consulta</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  
+  <body>
+      
+      <div class="ab">
+        <div class="abertura">
+        <h1>Dra. Ana Carolina</h1>
+        
+
+          <img
+        width="200px"
+        src="https://img.freepik.com/vetores-premium/logotipo-de-nutricao-e-saude_786241-758.jpg?w=360"
+        alt="Logotipo Dra. Ana Carolina"
+        />
+     
+        </div>
+      
+        <h2 class="abertura_h2">Nutricionista - 123123 - CRN-11</h2>
+      
+        <p class="abertura_p">
+         Bem-vindo(a) ao consultorio da Dra. Ana Carolina. <br>
+
+         Uma jornada de bem-estar e saúde começa com escolhas conscientes. Nossa
+         missão é guiar você com um plano alimentar personalizado, feito para o seu
+         corpo e seus objetivos. Mais do que seguir dietas, uma consulta com uma
+         nutricionista é um investimento na sua qualidade de vida, energia e na
+         construção de hábitos duradouros. <br>
+
+         Marque agora sua consulta</p>
+      </div>
+    
+        <hr />
+
+    <form class="formulario">
+      
+      <div class="dados_pessoais">
+          <h2>DADOS PESSOAIS</h2>
+          
+          <label for="nome">Nome Completo</label>
+          <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Digite seu nome completo"
+          required
+        />
+
+          <label for="data">Data de Nascimento</label>
+          <input type="date" name="data" id="data" required />
+
+          <label for="telefone">Telefone:</label>
+          <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          placeholder="(XX) XXXXX-XXXX"
+          required
+          />
+
+        <label for="email">E-Mail</label>
+        <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu E-mail"
+        required
+        />
+
+        <p>Podemos encaminhar novidades para seu e-mail e WhatsApp?</p>
+        <input type="radio" name="novidade" id="sim" required />
+        <label for="sim">SIM</label>
+        <input type="radio" name="novidade" id="nao" />
+        <label for="nao">NÃO</label>
+      </div>
+      
+        <hr>
+      
+      <div class="marcacao">
+        <h2>MARCAÇÃO DA CONSULTA</h2>
+        
+        <label for="Unidade">Selecione a Unidade</label>
+        <select name="Unidade" id="Unidade" required>
+          <option value="">Selecione uma Unidade</option>
+          <option value="Aldeota">Aldeota</option>
+          <option value="Cidade dos Funcionários">Cidade dos Funcionários</option>
+          <option value="Eusébio">Eusébio</option>
+        </select>
+        
+
+        
+         <label for="agendamento">Data e Hora do Agendamento</label>
+         <input type="datetime-local" name="agendamento" id="agendamento" required/>
+        
+
+         <hr>
+      </div>
+
+        <hr>
+
+
+
+      <div class="pesquisa">
+        <h2 class="pesquisa">PESQUISA</h2>
+        <p>Para melhor aproveitamento da consulta, preencha o formulário abaixo. Não se preocupe com a exatidão, pois os parâmetros mais importantes serão revistos durante a consulta.</p>
+
+          <label for="peso">Qual o seu peso?</label>
+          <input
+          type="number"
+          name="peso"
+          id="peso"
+          placeholder="Digite seu peso"
+          />
+
+          <label for="altura">Qual a sua altura?</label>
+          <input
+          type="number"
+          name="altura"
+          id="altura"
+          placeholder="Digite sua altura"
+          />
+
+          <p>Possui Alguma Comorbidade?</p>
+          <input type="radio" name="comorb" id="sim" />
+          <label for="sim">SIM</label>
+          <input type="radio" name="comorb" id="nao" />
+          <label for="nao">NÃO</label>
+
+          <label for="comorbidade">Se sim, Qual?</label>
+          <input
+          type="text"
+          name="comorbidade"
+          id="comorbidade"
+          placeholder="Informe as comorbidades aqui"
+          />
+
+          <p>Possui exame de sangue feito nos últimos 3 meses? Se sim, anexe o documento abaixo.</p>
+
+          <label for="arquivo">Anexe seu Exame:</label>
+          <input type="file" name="arquivo" id="arquivo" />
+
+          <button type="submit">Enviar</button>
+
+      </div>
+  
+    </form>
+  </body>
+
+  
+</html>
+
+
+
+
+
+    <!-- CADASTRO DE CONSULTA
+ DADOS PESSOAIS
+ NOME, SOBRENOME, DATA DE NASCIMENTO, CPF, TELEFONE, E-MAIL, GOSTARIA DE RECEBER INFORMAÇÕES E NOVIDADES DA NOSSA CLÍNICA
+
+ MARCAÇÃO
+ ESPECIALIDADE, HORÁRIO, CLÍNICA
+
+ PESQUISA
+ POSSUI COMORBIDADE, FEZ CIRURGIA NOS ÚLTIMOS 2 ANOS
+ POSSUI ALGUM LAUDO OU EXAME RECENTE - SE SIM ANEXE O DOCUMENTO
