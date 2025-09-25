@@ -1,0 +1,133 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f2f0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0; /* Cola no topo da página */
+  left: 0; /* Cola na esquerda */
+  z-index: 1000;
+  background-color: #f7f2f0;
+}
+.logo {
+  border: solid 1px black;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+
+  img {
+    height: 76px;
+  }
+}
+
+.nome {
+  border: solid 1px black;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #da2d26;
+  }
+  h2 {
+    font-size: 15px;
+    margin-top: -5px;
+    color: #da2d26;
+  }
+}
+
+nav {
+  border: solid 1px black;
+  width: 70%;
+  padding-top: 15px;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    li a {
+      text-decoration: none;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #da2d26;
+    }
+  }
+}
+
+main {
+  margin-top: 80px;
+}
+
+.sobre {
+  height: 650px;
+  width: 100%;
+  display: flex;
+  .foto {
+    width: 45%;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 600px;
+    }
+  }
+  .texto {
+    width: 65%;
+    border: solid 1px black;
+    color: #da2d26;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 18px;
+      text-align: justify;
+      margin: 20px;
+    }
+  }
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+  padding: 70px;
+  margin-left: 300px;
+  .titulo {
+    background-color: #b4d692;
+    border-radius: 10px;
+    width: 500px;
+    color: #da2d26;
+    font-size: 24px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  .sumario {
+    border: solid 1px black;
+    color: #da2d26;
+    width: 700px;
+    text-align: left;
+    font-size: 24px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
