@@ -5,6 +5,11 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px;
+}
+
 body {
   background-color: #f7f2f0;
 }
@@ -21,7 +26,6 @@ header {
   background-color: #f7f2f0;
 }
 .logo {
-  border: solid 1px black;
   width: 10%;
   display: flex;
   justify-content: center;
@@ -69,15 +73,17 @@ nav {
 }
 
 main {
-  margin-top: 80px;
+  /*margin-top: 80px; */
+  margin: 0;
 }
 
 .sobre {
-  height: 650px;
   width: 100%;
   display: flex;
+  padding-top: 30px;
+  margin-top: 20px;
   .foto {
-    width: 45%;
+    width: 50%;
     border: solid 1px black;
     display: flex;
     align-items: center;
@@ -87,7 +93,7 @@ main {
     }
   }
   .texto {
-    width: 65%;
+    width: 50%;
     border: solid 1px black;
     color: #da2d26;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -111,7 +117,7 @@ main {
   flex-direction: column;
 
   gap: 40px;
-  padding: 70px;
+  padding: 20px;
   margin-left: 300px;
   .titulo {
     background-color: #b4d692;
@@ -123,11 +129,53 @@ main {
     text-align: center;
   }
   .sumario {
-    border: solid 1px black;
     color: #da2d26;
     width: 700px;
     text-align: left;
     font-size: 24px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    list-style-position: inside;
+    list-style: none; /* Remove o marcador principal */
+    list-style-image: none;
+    display: list-item; /* Mantém o comportamento de lista */
+    cursor: pointer; /* Indica que é clicável */
+    padding: 10px 0;
+    font-weight: bold;
+  }
+
+  summary::before {
+    content: "+ "; /* O sinal de mais no estado fechado */
+    font-size: 1.2em;
+    margin-right: 10px; /* Espaço entre o + e o texto da pergunta */
+    color: #ce3530; /* Use uma das cores da sua logo (vermelho) */
+    display: inline-block;
+  }
+  details[open] summary::before {
+    content: "- ";
+    color: #86bb4d;
+  }
+  details p {
+    font-weight: normal;
+    text-align: justify;
+  }
+}
+
+.contato {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 20px;
+
+  .titulo {
+    background-color: #b4d692;
+    border-radius: 10px;
+    width: 300px;
+    color: #da2d26;
+    font-size: 24px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-left: 300px;
+    gap: 20px;
   }
 }
